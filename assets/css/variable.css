@@ -1,0 +1,13 @@
+:root{
+    --font-family-1 :'Roboto';
+    --font-family-2 : 'Poppins' sans-serif;
+}
+
+:root{
+    --main-site-hdr:#fff;
+    --main-site-text:#0b0b0d;
+}
+
+:root{
+    --main-site-font-size : 16px ;
+}
