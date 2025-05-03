@@ -11,3 +11,10 @@
 :root{
     --main-site-font-size : 16px ;
 }
+
+
+:root {
+    --background: #ffffff;
+    --text-color: #111111;
+  }
+  

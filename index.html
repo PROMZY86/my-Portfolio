@@ -3,14 +3,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Promise Stephen - Passionate Web Developer. Specialized in Frontend and Backend Development.">
-    <meta name="keywords" content="Promise Stephen, Web Developer, Frontend, Backend, Portfolio">
+    <meta name="description" content="Promise Stephen - A passionate web developer specializing in frontend and backend development.">
+    <meta name="keywords" content="Promise Stephen, Web Developer, HTML, CSS, JavaScript, PHP, Portfolio">
     <meta name="author" content="Promise Stephen">
     
     
     <title>Promise Stephen | Web Developer</title>
-    <meta property="og:title" content="Promise Stephen | Web Developer">
-    <meta property="og:description" content="Passionate Web Developer specializing in both frontend and backend development.">
+    <meta property="og:title" content="Promise Stephen | Web Developer Portfolio">
+    <meta property="og:description" content="Explore my projects and get in touch for collaborations.">
     <meta property="og:image" content="images/portfolio-preview.png">
     <meta property="og:url" content="">
     <meta name="twitter:card" content="summary_large_image">
@@ -21,6 +21,125 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    
+<style>
+  .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+ 
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When checked */
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* DARK THEME STYLES */
+
+
+body.dark-mode {
+  --background: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body.dark-mode .portfolio-logo{
+  color:black ;
+}
+
+body.dark-mode .portfolio-hero-section{
+  background: #1a1a1a;
+}
+
+body.dark-mode  .portfolio-text{
+  color: white !important ;
+}
+
+
+body.dark-mode  .my-projects-section{
+  background: #1a1a1a !important; 
+} 
+
+body.dark-mode .project-card{
+  background: #1a1a1a !important; 
+  border: 1px solid white;
+}
+
+
+body.dark-mode .close-modal{
+  color: #1a1a1a ;
+}
+
+body.dark-mode .testimonial-section{
+  background: #1a1a1a;
+}
+
+body.dark-mode .client-name{
+  color: #1a1a1a ;
+}
+
+body.dark-mode  .contact-section{
+  background: #1a1a1a;
+}
+
+body.dark-mode .contact-section h2{
+  color: white !important ;
+}
+
+body.dark-mode .contact-section p{
+  color: white !important ;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+</style>
+
+
+
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -58,10 +177,10 @@
       </div>
   
       <ul class="portfolio-nav-bar d-none d-lg-flex">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link"> Home</a></li>
+        <li><a href="#about" class="nav-link"> About</a></li>
+        <li><a href="#projects" class="nav-link">  Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
   
       <!-- Custom Hamburger Toggler -->
@@ -70,9 +189,19 @@
         <span></span>
         <span></span>
       </button>
-  
+
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
     </nav>
+    
   </header>
+
+  
+
   
   <!-- Mobile Sidebar -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
@@ -81,12 +210,15 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
   </div>
+
+
+
 
   <section class="portfolio-hero-section" id="home">
     <div class="hero-container">
@@ -94,7 +226,7 @@
         <h1>Hi, I'm <span>Promise Stephen</span></h1>
         <h2>I am <span class="auto-type"></span></h2>
         <h2 id="auto-type"></h2>
-        <p>I build responsive and user-friendly websites from scratch, combining creativity with clean code.</p>
+        <p class="portfolio-text">I build responsive and user-friendly websites from scratch, combining creativity with clean code.</p>
         <div class="hero-buttons">
           <a href="#contact" class="btn-primary wave-btn">Hire Me</a>
           <a href="#projects" class="btn-secondary">View Projects</a>
@@ -113,19 +245,19 @@
 
   <!--  -->
   <section id="about" class="about-section py-5">
-    <div class="container">
+    <div class="container" class="fade-in">
       <div class="row align-items-center">
   
         <!-- Profile Image -->
-        <div class="col-lg-4 mb-4 mb-lg-0" id="img-content" >
+        <div class="col-lg-4 mb-4 mb-lg-0 fade-in-animate" style="--delay: 0.4s;" id="img-content" >
           <img src="assets/portfolio-image/IMG_20241218_100330.jpg" alt="Promise Inyang" class="img-fluid rounded shadow-sm">
         </div>
   
         <!-- About Content -->
-        <div class="col-lg-8" id="about-content" >
+        <div class="col-lg-8 fade-in-animate" style="--delay: 0.6s;"  id="about-content" >
           <h2 class="mb-3">About Me</h2>
-          <p>Hello! I'm Promise Inyang, a passionate and detail-oriented web developer with a strong love for crafting beautiful, responsive, and user-friendly websites. I specialize in both frontend and backend development, and I enjoy turning ideas into real-life digital experiences using clean, efficient code.</p>
-          <p>With experience in HTML, CSS, JavaScript, PHP, and MySQL, I have built and designed a variety of projects, ranging from simple landing pages to fully functional dynamic websites. I’m also comfortable working with tools like GitHub, Bootstrap, Tailwind CSS, and WAMP Server.</p>
+          <p>Hello! I'm Promise Stephen, a passionate and detail-oriented web developer with a strong love for crafting beautiful, responsive, and user-friendly websites. I specialize in both frontend and backend development, and I enjoy turning ideas into real-life digital experiences using clean, efficient code.</p>
+          <p>With experience in HTML, CSS, JavaScript, PHP, Python, and MySQL, I have built and designed a variety of projects, ranging from simple landing pages to fully functional dynamic websites. I’m also comfortable working with tools like GitHub, Bootstrap, Tailwind CSS, WordPress and WAMP Server.</p>
           <p>My goal is to continuously grow as a developer by learning new technologies, building amazing projects, and collaborating with other passionate professionals. When I'm not coding, I'm either researching new tech trends or polishing my skills to stay ahead in this ever-evolving field.</p>
           <div class="mt-4">
             <a href="assets/portfolio-image/My Resume.pdf" download class="btn btn-primary me-3 wave-btn">Download Resume</a>
@@ -135,7 +267,7 @@
       </div>
   
       <!-- Skills Icons -->
-      <div class="row mt-5 text-center" >
+      <div class="row mt-5 text-center fade-in-animate" >
         <h3 class="mb-4">My Skills</h3>
         <div class="d-flex flex-wrap justify-content-center gap-4">
           <i class="fab fa-html5 fa-3x" style="color:#e34c26;"></i>
@@ -147,6 +279,7 @@
           <i class="fab fa-bootstrap fa-3x" style="color:#563d7c;"></i>
           <i class="fab fa-git-alt fa-3x" style="color:#f1502f;"></i>
           <i class="fab fa-github fa-3x" style="color:#333;"></i>
+          <i class="fab fa-wordpress fa-3x" styl="color: blue ;"></i>
          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="40" alt="ChatGPT">
         </div>
       </div>
@@ -170,33 +303,33 @@
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <!-- Project Slide 1 -->
-      <div class="swiper-slide project-card" data-category="frontend" onclick="openModal(this)">
-        <img src="assets/portfolio-image/Project1.jpg" alt="Project 3" class="portfolio-project-img">
+      <div class="swiper-slide project-card" data-category="fullstack" onclick="openModal(this)">
+        <img src="assets/portfolio-image/Project1.jpg" alt="Project 1" class="portfolio-project-img">
         <h3 class="project-title">Hotel Website</h3>
         <p class="project-desc" style="display:none">Fully responsive hotel booking interface with PHP backend.</p>
         <a class="project-link" href="https://example.com" target="_blank" style="display:none">https://example.com</a>
       </div>
 
       <!-- Project Slide 2 -->
-      <div class="swiper-slide project-card"  data-category="backend" onclick="openModal(this)"   >
-        <img src="assets/portfolio-image/Project1.jpg" alt="Project 3" class="portfolio-project-img">
+      <div class="swiper-slide project-card"  data-category="frontend" onclick="openModal(this)"   >
+        <img src="assets/portfolio-image/Project 2.jpg" alt="Project 2" class="portfolio-project-img">
         <h3 class="project-title">Portfolio Site</h3>
         <p class="project-desc" style="display:none">My personal brand website showcasing my work and skills.</p>
         <a class="project-link" href="https://example.com" target="_blank" style="display:none">https://example.com</a>
       </div>
 
       <!-- Project Slide 3 -->
-      <div class="swiper-slide project-card"  data-category="fullstack"  onclick="openModal(this)"  >
-        <img src="assets/portfolio-image/Project1.jpg" alt="Project 3" class="portfolio-project-img">
-        <h3 class="project-title">Landing Page</h3>
-        <p class="project-desc" style="display:none">Modern landing page layout with animations and contact form.</p>
+      <div class="swiper-slide project-card"  data-category="frontend"  onclick="openModal(this)"  >
+        <img src="assets/portfolio-image/Project 3.jpg" alt="Project 3" class="portfolio-project-img">
+        <h3 class="project-title">A Bubble Lottery Game</h3>
+        <p class="project-desc" style="display:none">A side Project Bubble Lottery Game</p>
         <a class="project-link" href="https://example.com" target="_blank" style="display:none">https://example.com</a>
       </div>
 
       <div class="swiper-slide project-card"  data-category="frontend"  onclick="openModal(this)"  >
-        <img src="assets/portfolio-image/Project1.jpg" alt="Project 3" class="portfolio-project-img">
-        <h3 class="project-title">Landing Page</h3>
-        <p class="project-desc" style="display:none"> Modern landing page layout with animations and contact form.</p>
+        <img src="assets/portfolio-image/Project 4.jpg" alt="Project 4" class="portfolio-project-img">
+        <h3 class="project-title">To Do List App</h3>
+        <p class="project-desc" style="display:none">A TO Do list App where Users Can check and update their daily activities</p>
         <a class="project-link" href="https://example.com" target="_blank" style="display:none">https://example.com</a>
       </div>
 
@@ -388,18 +521,7 @@
   </div>
 </footer>
 
-
-
-  
-
-
-
-
-
-  
-  
-
-  <button id="element-scroll-to-top-btn" onclick="scrollToTop()">&#8679;</button>
+ <button id="element-scroll-to-top-btn" onclick="scrollToTop()">&#8679;</button>
 
 
  
@@ -413,6 +535,7 @@
 
     
  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
  <script>
     const toggler = document.querySelector('.portfolio-hamburger-menu-toggler');
   const offcanvas = document.getElementById('mobileMenu');
@@ -426,13 +549,38 @@
   });
  </script>
 
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
   var typed = new Typed(".auto-type", {
-    strings: ["a passionate web developer", "a creative problem solver", "a dedicated freelancer"],
+    strings: ["a passionate web developer", "a creative problem solver", "Mobile app developer"],
     typeSpeed: 60,
     backSpeed: 40,
     loop: true
@@ -453,10 +601,7 @@
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-
-
-  <script>
-    
+<script>
 const scrollTopBtn = document.getElementById("element-scroll-to-top-btn");
 window.onscroll = function() {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
@@ -471,7 +616,7 @@ function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, 1000); // Added delay of 300ms
 }
-  </script>
+</script>
 
 <script>
   var swiper = new Swiper(".mySwiper", {
@@ -567,7 +712,6 @@ function scrollToTop() {
   });
 </script>
 
-
 <script>
   const swiper2 = new Swiper('.testimonial-swiper', {
     loop: true,
@@ -599,8 +743,52 @@ function scrollToTop() {
 </script>
 
 <script>
+  
+
+function revealOnScroll() {
+    let elements = document.querySelectorAll(".fade-in-animate")
+    elements.forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+            el.classList.add("visible");
+        } else {
+            el.classList.remove("visible");
+        }
+    });
+}
+
+document.addEventListener("scroll", revealOnScroll);
+document.addEventListener("DOMContentLoaded", revealOnScroll);
+
+</script>
+
+<script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved theme
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
 
 
 

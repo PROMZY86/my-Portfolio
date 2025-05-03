@@ -12,7 +12,7 @@
 
 
 
-
+/* portfolio header styling */
 .portfolio-top-header {
     background-color: var(--main-site-hdr);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -96,6 +96,12 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
+  .nav-link.active {
+    color: #00bfff;
+    font-weight: bold;
+    border-bottom: 2px solid #00bfff;
+  }
+
   /* Sidebar */
   .offcanvas-end {
     background-color: #007BFF  !important;
@@ -113,11 +119,12 @@
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--main-site-hdr);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .offcanvas-body a:hover {
     color: var(--main-site-text);
+    border-bottom: var(--main-site-text);
   }
 
   @media (max-width: 991px) {
@@ -183,20 +190,20 @@
     margin-bottom: 10px;
     color: var(--font-color-dark);
     font-weight: 700;
-    /* font-family: var(--font-family-2); */
-  }
+   }
   
   .hero-content h1 span {
     color: #007BFF;
   }
+
+
   
 
 
   #auto-type {
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--main-site-text); /* or any accent color you prefer */
-    /* font-family: var(--font-family-2); */
+    color: var(--main-site-text); 
     white-space: nowrap;
     overflow: hidden;
  }
@@ -206,7 +213,6 @@
     color: var(--main-site-text);
     margin-bottom: 30px;
     line-height: 1.6;
-    /* font-family: var(--font-family-2); */
   }
   
   .hero-buttons {
@@ -309,11 +315,10 @@
   }
 
 
-   /*  */
-
-  .my-projects-section {
+   /* projects styling */
+   .my-projects-section {
     padding: 60px 20px;
-    background: #f9f9f9;
+    background: linear-gradient(to bottom right, #f8f9fa, #e0e0e0);
     text-align: center;
     position: relative;
   }
@@ -354,21 +359,18 @@
   }
   
 
- 
-  .project-card {
+  /*  */
+  .project-card  {
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    /* padding: 20px; */
-    /* /* text-align: left; */
-    /* border: 1px solid green; */
-    /* width: 200px; */
     transition: transform 0.3s ease;
     padding-bottom: 20px;
     overflow: hidden;
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.6s forwards;
+
   
   }
 
@@ -376,7 +378,7 @@
     transform: translateY(-10px);
   }
 
-
+  
   .project-card h3 {
     margin: 15px 0 10px;
     font-size: 1.3rem;
@@ -388,7 +390,6 @@
     color: #555;
     padding: 0 15px;
   }
-
 
   .view-btn {
     display: inline-block;
@@ -407,29 +408,20 @@
   }
  
      
-
-
-  .swiper-slide{
+.swiper-slide{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid green ; */
+ }
 
-  }
-  
-  /* .project-card img {
-    width: 150px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  } */
-  
- .portfolio-project-img{
+.portfolio-project-img{
    width: 100%;
    border-radius: 8px;
    margin-bottom: 10px;
    height: auto;
   }
-  .project-card h3 {
+  
+.project-card h3 {
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
@@ -466,12 +458,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: var(--main-site-end) !important; */
     font-size: 10px;
     position: absolute;
     top: 8rem !important;
-    /* right: -0.2rem !important; */
-    /* left: rem !important; */
   }
 
   .swiper-button-next::after, .swiper-button-prev::after {
@@ -485,9 +474,6 @@
     background: black;
     width: 5px !important;
     height: 5px !important;
-    /* position: absolute; */
-    /* bottom: -20px !important; */
-
   }
 
 
@@ -518,7 +504,7 @@
   .close-modal {
     position: absolute;
     right: 25px;
-    top: 10px;
+    top: 5px;
     font-size: 30px;
     cursor: pointer;
   }
@@ -599,7 +585,7 @@
 
 /* Swiper Testimonial Section */
 .testimonial-section {
-  background: linear-gradient(135deg, #f2f2f2, #e0e0e0);
+  background: linear-gradient(to bottom right, #f8f9fa, #e0e0e0);
   padding: 60px 20px;
   text-align: center;
   position: relative;
@@ -685,7 +671,7 @@
   background-color: #007BFF;
 }
 
-/*  */
+/*contact styling  */
 .contact-section {
   padding: 60px 20px;
   background: #f9f9f9;
@@ -753,10 +739,9 @@
 
 
 
-/*  */
+/* footer styling  */
 .site-footer {
   background:url('../portfolio-image/IMG_20241218_100330.jpg') center/cover no-repeat;
-  /* background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; */
   color: #fff;
   text-align: center;
   padding: 60px 20px 30px;
@@ -832,6 +817,42 @@ footer .copyright {
 }
 
 
+.fade-in{
+  opacity: 0; 
+  transform: translateY(20px); 
+ animation: fadeInUp2 0.8s ease-out forwards;
+}
+
+
+.fade-in-animate{
+  opacity: 0;
+  transform: translateY(50px);
+  transform: translateY(50px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  transition-delay: var(--delay, 2s); 
+  visibility: hidden;
+}
+
+
+.fade-in-animate.visible{
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+
+@keyframes fadeInUp2 {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
 
 /* Animation */
 @keyframes fadeInUp {
@@ -877,6 +898,12 @@ footer .copyright {
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
 
 
 
