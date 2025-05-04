@@ -6,21 +6,27 @@
     <meta name="description" content="Promise Stephen - A passionate web developer specializing in frontend and backend development.">
     <meta name="keywords" content="Promise Stephen, Web Developer, HTML, CSS, JavaScript, PHP, Portfolio">
     <meta name="author" content="Promise Stephen">
-    
+    <meta name="robots" content="index, follow, Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9paGcuanBlZw, 
+    max-image-preview:large, max-snippet: -1, max-video-preview:-1">
     
     <title>Promise Stephen | Web Developer</title>
     <meta property="og:title" content="Promise Stephen | Web Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url"  content="">
     <meta property="og:description" content="Explore my projects and get in touch for collaborations.">
     <meta property="og:image" content="images/portfolio-preview.png">
+    <meta property="og:site_name"  content="My PortFolio"
     <meta property="og:url" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet"  href="assets/css/style.css" type="text/css">
     <link rel="stylesheet"  href="assets/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/variable.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css">
+
     
 <style>
   .theme-switch-wrapper {
@@ -33,7 +39,6 @@
   display: inline-block;
   width: 50px;
   height: 24px;
- 
 }
 
 .theme-switch input {
@@ -66,16 +71,14 @@
 
 /* When checked */
 input:checked + .slider {
-  background-color: #4caf50;
+  background-color:  #007BFF;
 }
 
-input:checked + .slider::before {
+input:checked + .slider::before{
   transform: translateX(26px);
 }
 
 /* DARK THEME STYLES */
-
-
 body.dark-mode {
   --background: #1a1a1a;
   --text-color: #ffffff;
@@ -93,7 +96,6 @@ body.dark-mode  .portfolio-text{
   color: white !important ;
 }
 
-
 body.dark-mode  .my-projects-section{
   background: #1a1a1a !important; 
 } 
@@ -102,7 +104,6 @@ body.dark-mode .project-card{
   background: #1a1a1a !important; 
   border: 1px solid white;
 }
-
 
 body.dark-mode .close-modal{
   color: #1a1a1a ;
@@ -128,20 +129,12 @@ body.dark-mode .contact-section p{
   color: white !important ;
 }
 
-
 body {
   background-color: var(--background);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 </style>
-
-
-
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -156,24 +149,15 @@ body {
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <script type="text/javascript" src="assets/js/all.min.js" defer="defer" data-wp-strategy="defer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="assets/js/swiper.js"></script> -->
- 
-    <!-- <script type="text/javascript"   src="assets/js/swiper-bundle.min.js"></script> -->
-    <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js" defer="defer" data-wp-strategy="defer"></script> -->
-
-</head>
+  </head>
 <body>
 
 <!-- main site header-->
-
-
 <header class="portfolio-top-header">
     <nav class="portfolio-top-nav-bar">
       
       <div class="portfolio-logo">
-        <h1>My Portfolio.</h1>
+        <h2>Promise Stephen.</h2>
       </div>
   
       <ul class="portfolio-nav-bar d-none d-lg-flex">
@@ -191,16 +175,14 @@ body {
       </button>
 
       <div class="theme-switch-wrapper">
-        <label class="theme-switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
+        <label class="theme-switch" id="theme-label"  >
+          <input type="checkbox" id="theme-toggle" title=" Dark Mode"  >
+          <span class="slider" ></span>
         </label>
       </div>
     </nav>
     
   </header>
-
-  
 
   
   <!-- Mobile Sidebar -->
@@ -219,7 +201,7 @@ body {
 
 
 
-
+<!--  -->
   <section class="portfolio-hero-section" id="home">
     <div class="hero-container">
       <div class="hero-content">
@@ -257,7 +239,7 @@ body {
         <div class="col-lg-8 fade-in-animate" style="--delay: 0.6s;"  id="about-content" >
           <h2 class="mb-3">About Me</h2>
           <p>Hello! I'm Promise Stephen, a passionate and detail-oriented web developer with a strong love for crafting beautiful, responsive, and user-friendly websites. I specialize in both frontend and backend development, and I enjoy turning ideas into real-life digital experiences using clean, efficient code.</p>
-          <p>With experience in HTML, CSS, JavaScript, PHP, Python, and MySQL, I have built and designed a variety of projects, ranging from simple landing pages to fully functional dynamic websites. I’m also comfortable working with tools like GitHub, Bootstrap, Tailwind CSS, WordPress and WAMP Server.</p>
+          <p>With experience in HTML, CSS, JavaScript, PHP, Python, and MySQL, I have built and designed a variety of projects, ranging from simple landing pages to fully functional dynamic websites. I’m also comfortable working with tools like Git, GitHub, Bootstrap, Tailwind CSS, WordPress and WAMP Server.</p>
           <p>My goal is to continuously grow as a developer by learning new technologies, building amazing projects, and collaborating with other passionate professionals. When I'm not coding, I'm either researching new tech trends or polishing my skills to stay ahead in this ever-evolving field.</p>
           <div class="mt-4">
             <a href="assets/portfolio-image/My Resume.pdf" download class="btn btn-primary me-3 wave-btn">Download Resume</a>
@@ -286,7 +268,7 @@ body {
     </div>
   </section>
 
-
+<!--  -->
  <section class="my-projects-section" id="projects">
   <div class="section-title">
     <h2>My Works</h2>
@@ -346,8 +328,8 @@ body {
     <div class="modal-content animate-fade-in">
       <span class="close-modal" onclick="closeModal()">&times;</span>
       <img id="modalImg" src="" alt="Project Preview">
-      <h3 id="modalTitle"></h3>
-      <p id="modalDesc"></p>
+      <h3 id="modalTitle" class="modalDesc1"></h3>
+      <p id="modalDesc" class="modalDesc1"></p>
       <a id="modalLink" href="#" target="_blank" class="modal-btn">View Project</a>
     </div>
   </div>
@@ -392,17 +374,7 @@ body {
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!--  -->
 <section class="testimonial-section" id="testimonials">
   <div class="testimonial-container">
     <h2 class="testimonial-title">What Clients Say</h2>
@@ -487,7 +459,6 @@ body {
     <!-- Optional extras -->
     <input type="hidden" name="_subject" value="New Message from Portfolio!">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://your-portfolio-link.com/thanks.html">
     <input type="text" name="_honey" style="display:none">
 
     <input type="text" name="name" placeholder="Your Name" required>
@@ -509,10 +480,10 @@ body {
     </div>
 
     <ul class="social-links">
-      <li><a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.fiverr.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://github.com/PROMZY86" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.facebook.com/promise.stephen.9256" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/man_lyk_Promzy" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.fiverr.com/promzystephen" target="_blank"><i class="fab fa-fiverr"></i></a></li>
     </ul>
 
     <p class="copyright">
@@ -535,9 +506,14 @@ body {
 
     
  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript"   src="assets/js/swiper-bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script type="text/javascript" src="assets/js/all.min.js" defer="defer" data-wp-strategy="defer"></script>
  
  <script>
-    const toggler = document.querySelector('.portfolio-hamburger-menu-toggler');
+  const toggler = document.querySelector('.portfolio-hamburger-menu-toggler');
   const offcanvas = document.getElementById('mobileMenu');
 
   toggler.addEventListener('click', () => {
@@ -574,10 +550,37 @@ body {
   });
 </script>
 
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  const label = document.getElementById('theme-label');
 
+  // Load saved theme
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.checked = true;
+    label.title = " Light Mode";
+  } else {
+    label.title = " Dark Mode"
+  }
 
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+      label.title = " Light Mode";
+    } else {
+      body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+      label.title = " Dark Mode";
+    }
+  });
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
+</script>
+
+<!--  -->
 <script>
   var typed = new Typed(".auto-type", {
     strings: ["a passionate web developer", "a creative problem solver", "Mobile app developer"],
@@ -594,30 +597,12 @@ body {
   });
 </script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--  -->
 <script>
   AOS.init();
 </script>
 
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-<script>
-const scrollTopBtn = document.getElementById("element-scroll-to-top-btn");
-window.onscroll = function() {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        scrollTopBtn.style.display = "block";
-    } else {
-        scrollTopBtn.style.display = "none";
-    }
-};
-
-function scrollToTop() {
-    setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 1000); // Added delay of 300ms
-}
-</script>
-
+<!--  -->
 <script>
   var swiper = new Swiper(".mySwiper", {
 
@@ -649,6 +634,7 @@ function scrollToTop() {
   });
 </script>
 
+<!--  -->
 <script>
   // Swiper init
   const swwiper = new Swiper('.mySwiper', {
@@ -682,36 +668,67 @@ function scrollToTop() {
   });
 </script>
 
+<!--  -->
 <script>
-  function openModal(card) {
-    const img = card.querySelector("img").src;
-    const title = card.querySelector(".project-title").textContent;
-    const desc = card.querySelector(".project-desc").textContent;
-    const link = card.querySelector(".project-link").href;
+  let modaltxtcolor = document.querySelectorAll(".modalDesc1")
 
-    document.getElementById("modalImg").src = img;
-    document.getElementById("modalTitle").textContent = title;
-    document.getElementById("modalDesc").textContent = desc;
-    document.getElementById("modalLink").href = link;
+    function modalTxt(){
+     for(let i = 0; i < modaltxtcolor.length; i++){
+      modaltxtcolor[i].style.color = "white" ;
+      modaltxtcolor[i].style.zIndex = 1000 ;
+       }
+ }
+ 
+ modalTxt()
+  
+ function openModal(card) {
+   const img = card.querySelector("img").src;
+   const title = card.querySelector(".project-title").textContent;
+   const desc = card.querySelector(".project-desc").textContent;
+   const link = card.querySelector(".project-link").href;
 
-    document.getElementById("projectModal").style.display = "flex";
-  }
+   document.getElementById("modalImg").src = img;
+   document.getElementById("modalTitle").textContent = title;
+   document.getElementById("modalDesc").textContent = desc;
+   document.getElementById("modalLink").href = link;
+   document.getElementById("projectModal").style.display = "flex";
+ }
 
-  function closeModal() {
-    document.getElementById("projectModal").style.display = "none";
-  }
+ function closeModal() {
+   document.getElementById("projectModal").style.display = "none";
+ }
 
-  // Animate project cards on load
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".project-card").forEach((card, i) => {
-      setTimeout(() => {
-        card.style.animationDelay = `${i * 0.1}s`;
-        card.classList.add("animated");
-      }, 50);
-    });
-  });
+ // Animate project cards on load
+ window.addEventListener("DOMContentLoaded", () => {
+   document.querySelectorAll(".project-card").forEach((card, i) => {
+     setTimeout(() => {
+       card.style.animationDelay = `${i * 0.1}s`;
+       card.classList.add("animated");
+     }, 50);
+   });
+});
+
 </script>
 
+<!--  -->
+<script>
+const scrollTopBtn = document.getElementById("element-scroll-to-top-btn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 1000); // Added delay of 300ms
+}
+</script>
+
+<!--  -->
 <script>
   const swiper2 = new Swiper('.testimonial-swiper', {
     loop: true,
@@ -742,9 +759,8 @@ function scrollToTop() {
   });
 </script>
 
+<!--  -->
 <script>
-  
-
 function revealOnScroll() {
     let elements = document.querySelectorAll(".fade-in-animate")
     elements.forEach((el, index) => {
@@ -759,39 +775,12 @@ function revealOnScroll() {
 
 document.addEventListener("scroll", revealOnScroll);
 document.addEventListener("DOMContentLoaded", revealOnScroll);
-
 </script>
 
+<!--  -->
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
-
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
-
-  // Load saved theme
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme === 'dark') {
-    body.classList.add('dark-mode');
-    toggle.checked = true;
-  }
-
-  toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-      body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light');
-    }
-  });
-</script>
-
-
-
-
 
 </body>
 </html>

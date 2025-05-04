@@ -38,9 +38,9 @@
     align-items: center;
   }
 
-  .portfolio-logo h1 {
+  .portfolio-logo h2 {
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--font-color-dark);
   }
@@ -383,11 +383,12 @@
     margin: 15px 0 10px;
     font-size: 1.3rem;
     color: var(--font-color-dark);
+    
   }
   
   .project-card p {
     font-size: 0.95rem;
-    color: #555;
+    color: #555; 
     padding: 0 15px;
   }
 
@@ -480,7 +481,7 @@
   .project-modal {
     display: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -488,17 +489,20 @@
     background: rgba(0,0,0,0.7);
     justify-content: center;
     align-items: center;
+   
   }
 
   .modal-content {
-    background: white;
     padding: 20px;
     border-radius: 12px;
     max-width: 500px;
     text-align: center;
     position: relative;
     animation: fadeIn 0.3s ease;
+   
   }
+
+
 
 
   .close-modal {
@@ -513,7 +517,7 @@
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
+}
 
   .modal-btn {
     display: inline-block;
@@ -738,7 +742,6 @@
 
 
 
-
 /* footer styling  */
 .site-footer {
   background:url('../portfolio-image/IMG_20241218_100330.jpg') center/cover no-repeat;
@@ -898,14 +901,6 @@ footer .copyright {
     transform: translateY(0);
   }
 }
-
-
-
-
-
-
-
-
 
 
 #element-scroll-to-top-btn{
