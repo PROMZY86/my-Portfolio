@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     cursor: pointer;
     font-family: var(  --font-family-2);
-  }
+}
 
 
 
@@ -839,6 +839,11 @@ footer .copyright {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+}
+
+.about-content{
+  border:1px solid red;
+
 }
 
 
