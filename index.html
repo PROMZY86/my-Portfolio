@@ -3,14 +3,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Promise Stephen - A passionate web developer in Lagos, Nigeria specializing in frontend and backend development.  crafting modern landing pages and fullstack websites with HTML, CSS, JavaScript, and PHP. Let’s build your dream project.">
-    <meta name="keywords" content="Promise Stephen, Web Developer, HTML, CSS, JavaScript, PHP, Portfolio, Full-Stack Developer, Feelancer, Nigeria">
-    <meta name="author" content="Promise Stephen">
+    <meta name="description" content="Promzy - A passionate web developer in Lagos, Nigeria specializing in frontend and backend development.  crafting modern landing pages and fullstack websites with HTML, CSS, JavaScript, and PHP. Let’s build your dream project.">
+    <meta name="keywords" content="Promzy, Web Developer, HTML, CSS, JavaScript, PHP, Portfolio, Full-Stack Developer, Feelancer, Nigeria">
+    <meta name="author" content="Promzy">
     <meta name="robots" content="index, follow, Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9paGcuanBlZw, 
     max-image-preview:large, max-snippet: -1, max-video-preview:-1">
     <meta name="google-site-verification" content="ZyiRf9R6y9DT6Allx0cxSo94Wl0Q0uiLhxfb0RP7BMs" />
    
-    <title>Promise Stephen | Web Developer</title>
+    <title>Promzy | Web Developer</title>
     <meta property="og:title" content="Promise Stephen | Web Developer Portfolio">
     <meta property="og:locale" content="en_US">
     <meta property="og:url"  content="">
@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twiter:title" content="Promise Stephen | Web Developer">
+    <meta name="twiter:title" content="Promzy | Web Developer">
     <meta name="twitter:description" content="Explore my projects, works and skils  and get in touch for collaborations.">
 
     <link rel="stylesheet"  href="assets/css/style.css" type="text/css">
@@ -74,7 +74,6 @@
   transition: 0.4s;
 }
 
-/* When checked */
 input:checked + .slider {
   background-color:  #007BFF;
 }
@@ -83,7 +82,6 @@ input:checked + .slider::before{
   transform: translateX(26px);
 }
 
-/* DARK THEME STYLES */
 body.dark-mode {
   --background: #1a1a1a;
   --text-color: #ffffff;
@@ -179,12 +177,12 @@ body {
         <span></span>
       </button>
 
-      <div class="theme-switch-wrapper">
+       <div class="theme-switch-wrapper">
         <label class="theme-switch" id="theme-label"  >
           <input type="checkbox" id="theme-toggle" title=" Dark Mode"  >
           <span class="slider" ></span>
         </label>
-      </div>
+      </div> 
     </nav>
     
   </header>
@@ -245,14 +243,14 @@ body {
           <p>With experience in HTML, CSS, JavaScript, PHP, Python, and MySQL, I have built and designed a variety of projects, ranging from simple landing pages to fully functional dynamic websites. I’m also comfortable working with tools like Git, GitHub, Bootstrap, Tailwind CSS, WordPress and WAMP Server.</p>
           <p>My goal is to continuously grow as a developer by learning new technologies, building amazing projects, and collaborating with other passionate professionals. When I'm not coding, I'm either researching new tech trends or polishing my skills to stay ahead in this ever-evolving field.</p>
           <div class="mt-4">
-            <a href="assets/portfolio-image/MY new Resume.pdf" download class="btn btn-primary me-3 wave-btn">Download Resume</a>
+            <a href="assets/portfolio-image/Promise_CV.docx" download class="btn btn-primary me-3 wave-btn">Download Resume</a>
             <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
           </div>
         </div>
       </div>
   
       <!-- Skills Icons -->
-      <div class="row mt-5 text-center fade-in-animate" >
+      <div class="row mt-5 text-center fade-in-animate " >
         <h3 class="mb-4">My Skills And Tools I Use</h3>
         <div class="d-flex flex-wrap justify-content-center gap-4">
          <p style="display: flex; flex-direction: column;"><i class="fab fa-html5 fa-3x" style="color:#e34c26;"></i>HTML</p> 
@@ -261,7 +259,7 @@ body {
          <p style="display: flex; flex-direction: column;"><i class="fab fa-react fa-3x" style="color: #007BFF;"></i>React</p> 
          <p style="display: flex; flex-direction: column;"><i class="fab fa-php fa-3x" style="color:#8892be;"></i>PHP</p> 
          <p style="display: flex; flex-direction: column;"><i class="fas fa-database fa-3x" style="color:#00758f;"></i>MySQL</p> 
-        <p style="display: flex; flex-direction: column;"><i class="fab fa-python fa-3x" style="color:#3776ab;"></i>Python</p> 
+         <p style="display: flex; flex-direction: column;"><i class="fab fa-python fa-3x" style="color:#3776ab;"></i>Python</p> 
          <p style="display: flex; flex-direction: column;"><i class="fab fa-bootstrap fa-3x" style="color:#563d7c;"></i>BooStrap</p> 
          <p style="display: flex; flex-direction: column;"><i class="fab fa-git-alt fa-3x" style="color:#f1502f;"></i>Git</p> 
          <p style="display: flex; flex-direction: column;"><i class="fab fa-github fa-3x" style="color:#333;"></i>Github</p> 
@@ -483,7 +481,7 @@ body {
 
 <footer class="site-footer">
   <div class="footer-container">
-    <h2 class="footer-brand">Promise Stephen</h2>
+    <h2 class="footer-brand">Promzy</h2>
     <p class="footer-tagline">Passionate Full-Stack Developer</p>
 
     <div class="footer-contact">
@@ -567,6 +565,13 @@ body {
 </script>
 
 <script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".portfolio-top-header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<script>
   const toggle = document.getElementById('theme-toggle');
   const body = document.body;
   const label = document.getElementById('theme-label');
@@ -606,12 +611,7 @@ body {
   });  
 </script>
 
-<script>
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".portfolio-top-header");
-    header.classList.toggle("scrolled", window.scrollY > 50);
-  });
-</script>
+
 
 <!--  -->
 <script>
@@ -735,13 +735,9 @@ window.onscroll = function() {
     } else {
         scrollTopBtn.style.display = "none";
     }
-};
+}; 
 
-function scrollToTop() {
-    setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 1000); // Added delay of 300ms
-}
+scrollToTop()
 </script>
 
 <!--  -->
@@ -753,7 +749,7 @@ function scrollToTop() {
     disableOnInteraction: false  
     },
     
-    // slidesPerView: 1,
+    slidesPerView: 1,
     spaceBetween: 30,
     // loop: true,
     pagination: {
@@ -765,12 +761,10 @@ function scrollToTop() {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      400: {
+      600: {
         slidesPerView: 2,
       },
-
-
-   992: {
+  992: {
         slidesPerView:3,
       },
     },
